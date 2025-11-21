@@ -2,16 +2,36 @@
 
 class Program
 {
+    string[] vragen = new string[]
+    {
+        "Hoe lang zou jij overleven in een zombie apocalypse?",
+        "Why do round pizzas come in square boxes?",
+        "Has someone caught you dancing in front of the mirror?",
+        "Have you ever tried talking to a animal?", 
+        "What would you call a male ladybug?",
+        "Which species would be the rudest if all animals could talk?",
+
+    };
     static void Main(string[] args)
     {
         Console.WriteLine("Hello, World!");
 
         Program program = new Program(); //een program // void // new het maakt een nieuw object van het type Program // hij returned void 
         program.Run(); 
+        program.Vraag1();
+        program.Vraag2();
+        program.Vraag3();
+        program.Vraag4();
+        program.Vraag5();
+        program.Vraag6();
+        Console.WriteLine(program.Vraag7());
+
+
     }
     internal void Run()
     {
         Console.WriteLine("Dit is nu de start van mijn programma");
+        string vraag0 = GetRandomVraag();
     }
     internal void Vraag1()
     {
@@ -48,5 +68,21 @@ class Program
         Console.WriteLine("Which species would be the rudest if all animals could talk?");
         string antwoord = Console.ReadLine();
         Console.WriteLine(antwoord);
+    }
+    internal string Vraag7()
+    {
+        Console.WriteLine("Hoe lang zou jij overleven in een zombie apocalypse?");
+        string antwoord = Console.ReadLine();
+        return antwoord;
+    }
+    internal string GetVraag(int vraagIndex)
+    {
+        return vragen[vraagIndex];
+    }
+    internal string GetRandomVraag()
+    {
+        Random random = new Random();
+        int randomIndex = random.Next(vragen.Length);
+        return GetVraag(randomIndex);
     }
 }
