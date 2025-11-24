@@ -4,12 +4,12 @@ class Program
 {
     string[] vragen = new string[]
     {
-        "Hoe lang zou jij overleven in een zombie apocalypse?",
-        "Why do round pizzas come in square boxes?",
-        "Has someone caught you dancing in front of the mirror?",
-        "Have you ever tried talking to a animal?", 
-        "What would you call a male ladybug?",
-        "Which species would be the rudest if all animals could talk?",
+        "What 1997 N64 video game, features James Bond and is named after the 1995 film?",
+        "What arcade game was called Puckman in Japan?",
+        "In July 2023, video game company EA announced that players will be able to explore Wakanda in an upcoming open-world video game based on the adventures of what Marvel superhero?",
+        "Which spooky 2001 GameCube game starring Mario’s brother got a reboot for Nintendo Switch in 2019?", 
+        "Regarded as one of the greatest video games of all time, what 1981 arcade game features the titular amphibian trying to cross a road without getting squashed by cars, and a river without getting eaten by predators?",
+        "What is thought to be the first video game, created in 1958 and becoming popular in the 1970s?",
 
     };
     static void Main(string[] args)
