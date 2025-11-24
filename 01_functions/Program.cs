@@ -18,20 +18,25 @@ class Program
 
         Program program = new Program(); //een program // void // new het maakt een nieuw object van het type Program // hij returned void 
         program.Run(); 
-        program.Vraag1();
-        program.Vraag2();
-        program.Vraag3();
-        program.Vraag4();
-        program.Vraag5();
-        program.Vraag6();
-        Console.WriteLine(program.Vraag7());
 
 
     }
     internal void Run()
     {
         Console.WriteLine("Dit is nu de start van mijn programma");
-        string vraag0 = GetRandomVraag();
+        // Vraag1();
+        // Vraag2();
+        // Vraag3();
+        // Vraag4();
+        // Vraag5();
+        // Vraag6();
+        // Console.WriteLine(Vraag7());
+        // string vraag0 = GetRandomVraag();
+        AskRandomQuestion();
+        AskRandomQuestion();
+        AskRandomQuestion();
+        AskRandomQuestion();
+
     }
     internal void Vraag1()
     {
@@ -84,5 +89,13 @@ class Program
         Random random = new Random();
         int randomIndex = random.Next(vragen.Length);
         return GetVraag(randomIndex);
+    }
+    internal string AskRandomQuestion()
+    {
+        string vraag8 = GetRandomVraag();
+        Console.WriteLine(vraag8);
+        string antwoord = Console.ReadLine();
+        Console.WriteLine(antwoord);
+        return antwoord;
     }
 }
