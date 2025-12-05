@@ -1,3 +1,4 @@
+namespace _03_constructors;
 class QuizVraagAntwoord
 {
     internal QuizVraag vraag;
@@ -7,4 +8,4 @@ class QuizVraagAntwoord
         vraag = vraag;
         goed = false;
     }
-}
+}   

@@ -1,3 +1,4 @@
+namespace _03_constructors;
 class QuizVraag
 {
     internal string vraag, antwoord;
