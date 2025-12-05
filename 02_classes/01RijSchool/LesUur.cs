@@ -1,8 +1,7 @@
-namespace _01RijSchool;
-internal class LesPakket
+internal class LesUur
 {
-    internal int Tijd;
+    internal int tijd;
     internal Student student;
     internal RijLeraar rijLeraar;
     internal Auto auto;
-};
+}
