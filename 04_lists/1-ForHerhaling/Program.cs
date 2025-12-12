@@ -1,11 +1,12 @@
-﻿using System.Runtime.Serialization.Formatters;
+﻿using System.Reflection;
+using System.Runtime.Serialization.Formatters;
 
 namespace _04_lists;
 
 class Program
 {
     double[] prijzen = new double[] { 0.99, 5.60, 10.11, 2.50 };
-    string[] artiekelen = new string[] { "snoepje", "luxe broodjes", "lunch menu","koekjes" };
+    string[] artiekelen = new string[] { "snoepje", "luxe broodjes", "lunch menu", "koekjes" };
     Formulier[] formulieren = new Formulier[2];
 
     internal class Formulier
@@ -17,8 +18,11 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("Hello, World!");
-
-        Program p = new Program();
+        Program program = new Program();
+        program.Run();    
+    }
+    internal void Run()
+    {   
         p.formulieren[0] = new Formulier()
         {
             Feedback = "prijzen maar lekker",
@@ -40,4 +44,4 @@ class Program
             Console.WriteLine($"{formulier.Sterren}");
         }
     }
-}
+}   
