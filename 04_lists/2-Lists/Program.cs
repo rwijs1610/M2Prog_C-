@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
+using System.Reflection.Emit;
 using System.Reflection.Metadata.Ecma335;
 using System.Reflection.PortableExecutable;
 using System.Runtime.Serialization.Formatters;
@@ -28,6 +29,8 @@ class Program
     };
 
     List<string> characterList = new List<string>();
+
+    List<double> reviews = new List<double>(){9.99, 4.68, 342.97, 12.2};
     
     static void Main(string[] args)
     {
@@ -40,17 +43,23 @@ class Program
     {
         characterList.Add("ALEXIOS");
 
-        for (int i = 0; i < namen.Length; i++)
+        // for (int i = 0; i < namen.Length; i++)
+        // {
+        //     characterList.Add(namen[i]);
+        // }
+        // for (int i = 0; i < characterList.Count; i++)
+        // {
+        //     Console.WriteLine(characterList[i]);
+        // }
+        // foreach (var item in characterList)
+        // {
+        //     Console.WriteLine(item);
+        // }
+        reviews.Remove(342.97);
+        reviews.RemoveAt(0);
+        for (int i = 0; i < reviews.Count; i++)
         {
-            characterList.Add(namen[i]);
-        }
-        for (int i = 0; i < characterList.Count; i++)
-        {
-            Console.WriteLine(characterList[i]);
-        }
-        foreach (var item in characterList)
-        {
-            Console.WriteLine(item);
+            Console.WriteLine(reviews[i]);
         }
     }
 }
