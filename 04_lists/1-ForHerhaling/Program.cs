@@ -23,22 +23,22 @@ class Program
     }
     internal void Run()
     {   
-        p.formulieren[0] = new Formulier()
+        formulieren[0] = new Formulier()
         {
             Feedback = "prijzen maar lekker",
             Sterren = 5
         };
-        p.formulieren[1] = new Formulier()
+        formulieren[1] = new Formulier()
         {
             Feedback = "eten viel tegen",
             Sterren = 2
         };
-        for (int i = 0; i < p.prijzen.Length; i++)
+        for (int i = 0; i < prijzen.Length; i++)
         {
-            Console.WriteLine(p.artiekelen[i]);
-            Console.WriteLine(p.prijzen[i]);
+            Console.WriteLine(artiekelen[i]);
+            Console.WriteLine(prijzen[i]);
         }
-        foreach (Formulier formulier in p.formulieren)
+        foreach (Formulier formulier in formulieren)
         {
             Console.WriteLine($"{formulier.Feedback}");
             Console.WriteLine($"{formulier.Sterren}");
